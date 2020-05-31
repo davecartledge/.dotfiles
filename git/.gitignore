@@ -1,0 +1,39 @@
+# MacOS
+.AppleDouble
+.DS_Store
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Security
+id_rsa
+
+# Development
+.env
+.pid
+.vscode
+node_modules
+build
+out
+
+# testing
+/coverage
+
+# Logs
+*.log

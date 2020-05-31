@@ -1,0 +1,27 @@
+[alias]
+  unadd = reset HEAD
+  unstage = reset HEAD --
+
+[color]
+    ui = auto
+
+[core]
+  editor = vim
+  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  excludesfile = ~/.gitignore
+
+[diff]
+  tool = vimdiff
+
+[merge]
+	log = true
+
+[push]
+  default = simple
+
+[rebase]
+  autosquash = true
+
+[user]
+	name = Dave Cartledge
+	email = dave.cartledge@kyanmedia.com
