@@ -1,8 +1,14 @@
-ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# oh my zsh
+export ZSH=$HOME/.dotfiles/zsh/ohmyzsh
 
+# powerlevel10k theme
+source $HOME/.dotfiles/zsh/powerlevel10k/powerlevel10k.zsh-theme
+
+# powerlevel10k term prompt
 source $HOME/.dotfiles/zsh/prompt.zsh
-source $HOME/.dotfiles/zsh/aliases.zsh
-source $HOME/.dotfiles/zsh/functions.zsh
 
-source $ZSH/oh-my-zsh.sh
+# aliases
+source $HOME/.dotfiles/zsh/aliases.zsh
+
+# functions
+source $HOME/.dotfiles/zsh/functions.zsh

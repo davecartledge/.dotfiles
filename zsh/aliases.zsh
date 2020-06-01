@@ -23,13 +23,14 @@ alias dsp='docker system prune'
 # DNS Flush
 alias dnsflush='sudo killall -HUP mDNSResponder'
 
-# Directory Listings
-alias ls="ls -lhF"
-alias ll="ls -lhaF"
-
 # Directory Shortcuts
-alias cdd="cd ~/Downloads"
-alias cdp="cd ~/Projects"
+alias ..='cd ..'
+alias ....='cd ../..'
+alias c='clear'
+alias md='mkdir -p'
+alias rd='rmdir'
+alias ls='ls -lhFG'
+alias ll='ls -lhaFG'
 
 # Git
 alias g='git'
@@ -80,12 +81,17 @@ alias hs='history | grep'
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias iplocal="ipconfig getifaddr en0"
 
-# Look Busy!
-alias busy="cat /dev/urandom | hexdump -C | grep \"34 32\""
-
 # Keep Display Alive
 alias kda="caffeinate -u &"
 alias kdas="pkill -9 caffeinate"
+
+# Look Busy!
+alias busy="cat /dev/urandom | hexdump -C | grep \"34 32\""
+
+# Personal Directory Shortcuts
+alias cdd='cd ~/Downloads'
+alias cdp='cd ~/Projects'
+alias dot='cd ~/.dotfiles'
 
 # Show/Hide hidden files in finder
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
