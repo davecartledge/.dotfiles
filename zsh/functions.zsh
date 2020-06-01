@@ -16,7 +16,7 @@ function mkcd() {
   mkdir -p $1; cd $1
 }
 
-numfiles() {
+function numfiles() {
   N="$(ls $1 | wc -l)";
   echo "$N files";
 }
@@ -24,6 +24,13 @@ numfiles() {
 # Reload shell
 function reload() {
   exec $SHELL -l
+}
+
+# Diesplay term colors
+function termcolours() {
+  for i in {0..255}; do 
+    print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f "${${(M)$((i%6)):#3}:+$'\n'}; 
+  done
 }
 
 # Output file tree, excluding ignorables
