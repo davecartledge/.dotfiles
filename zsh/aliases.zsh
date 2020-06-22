@@ -29,8 +29,9 @@ alias ....='cd ../..'
 alias c='clear'
 alias md='mkdir -p'
 alias rd='rmdir'
-alias ls='ls -lhFG'
-alias ll='ls -lhaFG'
+alias ls='exa -l'
+alias lsd='exa -lDa --git'
+alias ll='exa -la --git'
 
 # Git
 alias g='git'

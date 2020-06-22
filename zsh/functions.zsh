@@ -33,11 +33,6 @@ function termcolours() {
   done
 }
 
-# Output file tree, excluding ignorables
-function tree(){
-  tree -aC -I '.git|node_modules|.yarn-cache|.DS_Store' --dirsfirst "$@"
-}
-
 # Weather info
 function weather() {
   curl wttr.in/$1
