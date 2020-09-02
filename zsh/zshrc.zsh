@@ -12,3 +12,5 @@ source $HOME/.dotfiles/zsh/aliases.zsh
 
 # functions
 source $HOME/.dotfiles/zsh/functions.zsh
+
+. /usr/local/Cellar/asdf/0.7.8/asdf.sh
